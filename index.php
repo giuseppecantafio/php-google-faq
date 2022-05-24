@@ -22,7 +22,7 @@ include 'dati.php';
             <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="logo" class="logo px-2">
             <a href="#" class="text-logo">Privacy e Termini</a>
         </div>
-        <div class="right d-flex align-items-end px-2">
+        <div class="right d-flex align-items-center mt-4 px-2">
             <a href="#" class="text-logo"><i class="fa-solid fa-apple-whole px-3"></i></a>
             <a href="#"><img src="https://thumbs.dreamstime.com/b/rainbow-colored-hand-fist-raised-up-gay-pride-lgbt-conc-rainbow-colored-hand-fist-raised-up-gay-pride-lgbt-concept-125615221.jpg" alt="User image" class="rounded-circle user-img"></a>
         </div>
