@@ -18,11 +18,11 @@ include 'dati.php';
 <body>
 <header>
     <div class="top d-flex justify-content-between px-3">
-        <div class="d-flex align-items-end">
+        <div class="left d-flex align-items-end">
             <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="logo" class="logo px-2">
             <a href="#" class="text-logo">Privacy e Termini</a>
         </div>
-        <div class="d-flex align-items-end px-2">
+        <div class="right d-flex align-items-end px-2">
             <a href="#" class="text-logo"><i class="fa-solid fa-apple-whole px-3"></i></a>
             <a href="#"><img src="https://thumbs.dreamstime.com/b/rainbow-colored-hand-fist-raised-up-gay-pride-lgbt-conc-rainbow-colored-hand-fist-raised-up-gay-pride-lgbt-concept-125615221.jpg" alt="User image" class="rounded-circle user-img"></a>
         </div>
@@ -30,17 +30,19 @@ include 'dati.php';
     </div>
     <div class="bottom px-3">
         <ul class="d-flex align-items-end px-2">
-            <li></li>
-            <li></li>
+        <?php foreach ($nav as $v){ ?>
+            <li class="text-center <?php if ($v['active']) echo 'active'; ?>"><?php echo $v['nome'];?></li>
+        <?php }; ?>
         </ul>
     </div>
 </header>
 <main>
-    <?php foreach($faqdb as $faq){
-        echo $faq['domanda'];
-        echo $faq['risposta'];
-    }
-    ?>
+    <div class="container text-justify">
+        <?php foreach($faqdb as $faq){ ?>
+            <div class="pt-2"><?php echo $faq['domanda']; ?></div>
+            <div class="pt-4"><?php echo $faq['risposta']; ?></div>
+        <?php }; ?>
+    </div>
 </main>
 </body>
 </html>

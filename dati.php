@@ -1,24 +1,24 @@
 <?php
 $nav = [
     [
-        "nome" => "Introduzione",
-        "active" => false
+        'nome' => 'Introduzione',
+        'active' => false
     ],
     [
-        "nome" => "Norme sulla privacy",
-        "active" => false
+        'nome' => 'Norme sulla privacy',
+        'active' => false
     ],
     [
-        "nome" => "Termini di servizio",
-        "active" => false
+        'nome' => 'Termini di servizio',
+        'active' => false
     ],
     [
-        "nome" => "Tecnologie",
-        "active" => false
+        'nome' => 'Tecnologie',
+        'active' => false
     ],
     [
-        "nome" => "Domande frequenti",
-        "active" => true
+        'nome' => 'Domande frequenti',
+        'active' => true
     ]
     ];
 
